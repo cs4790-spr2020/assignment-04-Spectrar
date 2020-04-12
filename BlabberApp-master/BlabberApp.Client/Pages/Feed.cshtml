@@ -1,0 +1,26 @@
+﻿@page
+@model BlabberApp.Client.Pages.FeedModel
+@{
+    ViewData["Title"] = "Feed";
+}
+<style>
+div.border {
+  border-style: 2px solid;
+}
+</style>
+<section id="main">
+    <form method="post">
+        <label>Email</label>
+        <input type="email" name="emailaddress">
+        <br/>
+        <lable>Message</lable>
+        <input type="text" name="message">
+        <br/>
+        <input type="submit">
+    </form>
+    <hr/>
+    <h1>Feed</h1>
+    <div class="border" id="content">
+        All the feed content will go here!
+    </div>
+</section>
